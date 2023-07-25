@@ -158,8 +158,7 @@ ui____initial_actions0 = lv.obj()
 def Slider2_eventhandler(event_struct):
    event = event_struct.code
    if event == lv.EVENT.CLICKED and True:
-      #print(dir(event_struct ))
-       ui_Label2.set_text("Graafika Test, slider: "+str(ui_Slider2.get_value()))
+      update_val( event_struct )
    return
 
 ui_Screen1 = lv.obj()
